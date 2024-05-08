@@ -1,0 +1,142 @@
+.NavbarContainer {
+    display: flex;
+    background-color: #333;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    font-family: math;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.section01 {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1714236040696-5050daedec84?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    background-color: #2923237a;
+}
+
+.details h1 {
+    font-weight: 800;
+    color: white;
+}
+
+.details p {
+    font-size: 25px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.section02 {
+    height: 73vh;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1c5870;
+    text-align: center;
+}
+
+.section02 h2 {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature img {
+    height: 220px;
+    width: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width : 680px) {
+
+    .details p {
+        font-size: 20px;
+        font-weight: 700;
+        color: whitesmoke;
+    }
+
+    .section02 {
+        height: auto;
+        width: 100%;
+        padding: 50px 0;
+        background-color: #1c5870;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature img {
+        height: 220px;
+        width: 200px;
+    }
+}
+
+@media (max-width:320px) {
+    .details p {
+        font-size: 14px;
+        font-weight: 700;
+        color: whitesmoke;
+    }
+
+    .feature img {
+        height: 150px;
+        width: 120px;
+    }
+}
+
+@media(max-width:165px) {
+
+    .NavbarContainer {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px 5px;
+    }
+}
