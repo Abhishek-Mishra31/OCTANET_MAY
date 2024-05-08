@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+    width: 65px;
+}
+
+.navBar {
+    max-width: 100%;
+}
+
+.navBar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+
+li {
+    font-family: Georgia, 'Times New Roman', Times,
+        serif;
+    font-weight: 600;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    display: block;
+    height: 100%;
+    height: fit-content;
+}
+
+.main h2 {
+    font-family: monospace;
+    font-weight: 900;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid black;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+
+.transparent-bg::placeholder {
+    color: white !important;
+}
+
+.todo_checkbox {
+    height: 2em !important;
+    width: 2em !important;
+}
+
+.task:has(.todo_checkbox:checked) {
+    color: rgb(84, 35, 9);
+    background-color: rgba(0, 0, 0, 0.13);
+    text-decoration: line-through 2px;
+    order: 1;
+}
+
+
+@media(max-width:360px) {
+
+    body {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 35px;
+    }
+
+    .header {
+        height: 20vh;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navBar ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+    }
+}
